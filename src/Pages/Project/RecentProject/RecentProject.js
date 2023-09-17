@@ -6,7 +6,7 @@ const RecentProject = () => {
   const [clickedProjectImage, setClickedProjectImage] = useState(null);
 
   const fetchProjects = () => {
-    fetch('http://localhost:5000/projects')
+    fetch('https://project-assignment-server.vercel.app/projects')
       .then((res) => res.json())
       .then((data) => {
         const reserveProjects = data.reverse();

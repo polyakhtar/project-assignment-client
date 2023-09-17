@@ -34,7 +34,7 @@ const CreateProject = () => {
         };
 
         // Send project data to your server
-        fetch('http://localhost:5000/projects', {
+        fetch('https://project-assignment-server.vercel.app/projects', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -62,7 +62,7 @@ const CreateProject = () => {
   };
 
   return (
-    <div className='py-6 px-4 h-screen border-2' style={{ width: '28%', backgroundColor: '#F3F4F6' }}>
+    <div className='py-6 px-4 h-screen border-l-2' style={{ width: '28%', backgroundColor: '#F3F4F6' }}>
       <h4 className='text-2xl mb-2' style={{ color: '#111827' }}>
         Start a new Project
       </h4>
