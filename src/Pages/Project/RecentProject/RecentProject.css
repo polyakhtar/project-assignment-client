@@ -1,0 +1,27 @@
+.parent-div {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+  }
+  
+  .child-div {
+    flex: 0 0 auto;
+    width: calc(25% - 16px); /* 4 টি চাইল্ডের জন্য */
+    margin-right: 16px; /* চাইল্ড ডিভ গুলির মধ্যে অংশ দিতে */
+  }
+  .child-div:last-child {
+    margin-right: 0; /* সর্বশেষ চাইল্ড ডিভের ডান দিকে মার্জিন দেয়নি */
+  }
+  
+  .parent-div::-webkit-scrollbar {
+    width: 8px;
+  }
+  .parent-div::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+  }
+  .parent-div::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
